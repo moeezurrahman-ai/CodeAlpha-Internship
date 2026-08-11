@@ -23,27 +23,29 @@ The available tasks are:
 | Task | Project | Status |
 |---|---|---|
 | Task 1 | Credit Scoring Model | ✅ Completed |
-| Task 2 | Emotion Recognition from Speech | 🔲 |
-| Task 3 | Handwritten Character Recognition | 🔲 |
-| Task 4 | Disease Prediction from Medical Data | 🔲 |
+| Task 2 | Emotion Recognition from Speech | 🔲 Not Started |
+| Task 3 | Handwritten Character Recognition | 🔲 Not Started |
+| Task 4 | Disease Prediction from Medical Data | ✅ Completed |
 
 ---
 
-## Completed Projects
+# Completed Projects
 
-### Task 1 — Credit Scoring Model
+## Task 1 — Credit Scoring Model
 
-**Objective:** Predict an individual's creditworthiness using historical financial data.
+### Objective
+
+Predict an individual's creditworthiness using historical financial data.
 
 The project uses the **UCI Statlog (German Credit Data)** dataset and compares multiple classification algorithms.
 
-**Models implemented:**
+### Models Implemented
 
 - Logistic Regression
 - Decision Tree
 - Random Forest
 
-**Evaluation metrics:**
+### Evaluation Metrics
 
 - Accuracy
 - Precision
@@ -51,75 +53,91 @@ The project uses the **UCI Statlog (German Credit Data)** dataset and compares m
 - F1-Score
 - ROC-AUC
 - Confusion Matrix
+- Classification Report
+
+### Results
+
+| Model | Accuracy | Precision | Recall | F1-Score | ROC-AUC |
+|---|---:|---:|---:|---:|---:|
+| Logistic Regression | 67.50% | 83.78% | 66.43% | 74.10% | 0.7617 |
+| Decision Tree | 62.50% | 81.55% | 60.00% | 69.14% | 0.6383 |
+| **Random Forest** | **71.50%** | **83.74%** | **73.57%** | **78.33%** | **0.7769** |
 
 **Best-performing model:** Random Forest
 
 **Best ROC-AUC:** 0.7769
 
-📁 Project:
+### Project Structure
 
 ```text
-*Task 1/
+Task 1/
 ├── CreditScoringModel.py
 ├── requirements.txt
 ├── README.md
 └── outputs/
+    ├── model_comparison.csv
+    ├── credit_scoring_model.joblib
+    └── best_model.json
 
-*Upcoming Projects
+*Task 4 — Disease Prediction from Medical Data
+*Objective
 
-*Task 2 — Emotion Recognition from Speech
+Build machine learning classification models to predict whether a breast tumour is benign or malignant using medical diagnostic features.
 
-Recognise human emotions from speech audio using speech signal processing and deep learning techniques.
+The project uses the UCI Breast Cancer Wisconsin (Diagnostic) Dataset and compares multiple classification algorithms.
 
-Potential approaches include:
+Disclaimer: This project is for educational purposes only. It is not a medical diagnostic system and must not be used to make real-world medical decisions.
 
-MFCC feature extraction
-CNN
-RNN
-LSTM
+*Dataset
 
-Possible datasets include RAVDESS, TESS, and EMO-DB.
+Dataset: Breast Cancer Wisconsin (Diagnostic)
 
-Status: 🔲 Not started
+Source: UCI Machine Learning Repository
 
-*Task 3 — Handwritten Character Recognition
+569 samples
+30 numerical features
+357 benign cases
+212 malignant cases
 
-Identify handwritten digits or characters using image processing and deep learning.
+The dataset is fetched programmatically using the ucimlrepo library.
 
-Potential approach:
-
-Image preprocessing
-Convolutional Neural Networks (CNN)
-MNIST / EMNIST datasets
-
-Status: 🔲 Not started
-
-T*ask 4 — Disease Prediction from Medical Data
-
-Predict the possibility of diseases using structured medical datasets and classification techniques.
-
-Potential algorithms include:
-
-SVM
+*Models Implemented
 Logistic Regression
+Support Vector Machine (SVM)
 Random Forest
 XGBoost
 
-Possible datasets include heart disease, diabetes, and breast cancer datasets from the UCI Machine Learning Repository.
+*Evaluation Metrics
+Accuracy
+Precision
+Recall
+F1-Score
+ROC-AUC
+Classification Report
+Confusion Matrix
 
-Status: 🔲 Not started
+*Results
+Model	                  Accuracy      Precision      Recall      F1-Score      ROC-AUC
+Random Forest	            97.37%	     100.00%	     92.86%	      96.30%	      0.9980
+Support Vector Machine	  98.25%	      97.62%	     97.62%	      97.62%	      0.9950
+Logistic Regression	      97.37%	      97.56%	     95.24%	      96.39%	      0.9954
+XGBoost	                  97.37%	     100.00%	     92.86%	      96.30%	      0.9934
 
-*Technologies
-Python
-Pandas
-NumPy
-Scikit-learn
-TensorFlow
-Joblib
-Machine Learning
-Deep Learning
-Data Preprocessing
-Model Evaluation
+Best-performing model according to ROC-AUC: Random Forest
+
+Best ROC-AUC: 0.9980
+
+Highest test accuracy and F1-score: Support Vector Machine
+
+*Project Structure
+Task 4/
+├── DiseasePredictionFromMedicalData.py
+├── requirements.txt
+├── README.md
+└── outputs/
+    ├── model_comparison.csv
+    ├── disease_prediction_model.joblib
+    └── best_model.json
 
 *Repository Structure
 codealpha-internship/
@@ -140,7 +158,13 @@ codealpha-internship/
 │   └── ...
 │
 ├── Task 4/
-│   └── ...
+│   ├── DiseasePredictionFromMedicalData.py
+│   ├── requirements.txt
+│   ├── README.md
+│   └── outputs/
+│       ├── model_comparison.csv
+│       ├── disease_prediction_model.joblib
+│       └── best_model.json
 │
 └── README.md
 
