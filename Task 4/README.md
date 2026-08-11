@@ -1,6 +1,6 @@
 # Task 4 — Disease Prediction from Medical Data
 
-## 📌 Overview
+## Overview
 
 This project is part of my **CodeAlpha Machine Learning Internship**.
 
@@ -8,11 +8,11 @@ The objective of this task is to build machine learning classification models th
 
 The project uses the **UCI Breast Cancer Wisconsin (Diagnostic) Dataset** and compares multiple machine learning algorithms.
 
-> ⚠️ **Disclaimer:** This project is for educational purposes only. It is not a medical diagnostic system and must not be used to make real-world medical decisions.
+> **Disclaimer:** This project is for educational purposes only. It is not a medical diagnostic system and must not be used to make real-world medical decisions.
 
 ---
 
-## 📊 Dataset
+## Dataset
 
 **Dataset:** Breast Cancer Wisconsin (Diagnostic)
 
@@ -37,7 +37,7 @@ The dataset is fetched programmatically using the `ucimlrepo` library.
 
 ---
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 - Python
 - Pandas
@@ -49,7 +49,7 @@ The dataset is fetched programmatically using the `ucimlrepo` library.
 
 ---
 
-## 🤖 Machine Learning Models
+## Machine Learning Models
 
 Four classification algorithms were implemented and compared:
 
@@ -60,7 +60,7 @@ Four classification algorithms were implemented and compared:
 
 ---
 
-## ⚙️ Machine Learning Pipeline
+## Machine Learning Pipeline
 
 The project follows these steps:
 
@@ -84,7 +84,7 @@ The dataset was divided into:
 
 ---
 
-## 📈 Model Evaluation
+## Model Evaluation
 
 The models were evaluated using:
 
@@ -109,7 +109,7 @@ Based on the **ROC-AUC score**, Random Forest was selected as the best-performin
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```text
 Task 4/
